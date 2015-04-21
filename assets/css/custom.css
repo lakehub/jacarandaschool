@@ -1,5 +1,5 @@
 body {
-    padding-top: 40px;
+    /*padding-top: 0px;*/
     /* 60px to make the container go all the way to the bottom of the topbar */
 }
 
@@ -12,7 +12,8 @@ body {
 
 .navbar-jacaranda,
 .dropdown-menu {
-    background-color: #963
+    background-color: #963;
+    border-radius: 0px;
 }
 
 .navbar-jacaranda .navbar-nav > li > a{
@@ -20,4 +21,31 @@ body {
 }
 .navbar-nav > li > .dropdown-menu > li > a {
     color: white;
+}
+.navbar-default .navbar-nav > .active > a{
+	color: #fff;
+	background-color: #a74;
+}
+.navbar-default{
+	border: 0px;	
+}
+#welcome-note{
+	padding-left: 40px;
+	text-align: justify;
+}
+.navbar-default .dropdown-menu > li > a:hover{
+	background-color: #a74;
+}
+.navbar-default .navbar-nav > .open > a:focus{
+	background-color: #a74;
+}
+.navbar-default .navbar-nav > .open > a:hover{
+	background-color: #a74;
+}
+.navbar-default .navbar-nav > .open > a{
+	background-color: #a74;
+}
+.values{
+    text-align: justify;
+    padding-top: 15px;  
 }
