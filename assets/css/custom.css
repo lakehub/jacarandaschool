@@ -5,7 +5,7 @@ body {
 
 .vertical-line {
     display: inline;
-    background-color: #000;
+    background-color: #000000;
     width: 1px;
     height: 100%;
 }
