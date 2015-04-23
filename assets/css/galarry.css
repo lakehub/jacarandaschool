@@ -48,3 +48,6 @@
     .carousel-caption .btn {
       margin-top: 20px;
     }
+    .thumbnails{
+      list-style-type: none;
+    }
