@@ -1,0 +1,82 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="language" content="english"> 
+
+<title>mouseover leftand right</title>
+
+<style type="text/css">
+body {
+    background-color:#fca;
+ }
+#box {
+    width:982px;
+    height:480px;
+    border-width:2px 4px 4px 2px; 
+    border-style:solid;
+    border-color:#900 #300 #300 #900;
+    border-radius:100 100px;
+    box-shadow:#520 20px 20px 30px;
+    margin:30px auto 0;
+    background-image:url(assets/img/bootstrap-mdo-sfmoma-01.jpg);
+    
+    background-position:-759px 0;          /* this value equals (2500-982)/2  and centers the background-image */
+    cursor:pointer;
+ }
+</style>
+
+<script type="text/javascript">
+   var el,l,w,mover;
+   var c=-759;                             /* this value equals (2500-982)/2  and centers the background-image */
+   var speed=20;
+
+function init(){
+   el=document.getElementById('box');
+   window.addEventListener?
+   el.addEventListener('mousemove',curPos,false):
+   el.attachEvent('onmousemove',curPos);
+ }
+
+function curPos(event){
+
+   l=event.clientX
+   w=l-el.offsetLeft;
+   clearTimeout(mover);
+   move();
+ }
+
+function move(){
+
+   w<=el.offsetWidth/2?
+   c-=4:
+   c+=4;
+
+if(c>=0){
+   c=0;
+   clearTimeout(mover);
+ }
+
+if(c<=-1518){                             /* this value equals (2500-982) */
+   c=-1518; 
+   clearTimeout(mover);
+ }
+
+   el.style.backgroundPosition=c+'px 0'; 
+   mover=setTimeout(function(){move()},speed)
+ }
+
+   window.addEventListener?
+   window.addEventListener('load',init,false):
+   window.attachEvent('onload',init);
+</script>
+
+</head>
+<body>
+
+<div id="box"></div>
+
+</body>
+</html>
