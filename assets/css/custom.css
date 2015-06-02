@@ -2,7 +2,17 @@ body {
     /*padding-top: 0px;*/
     /* 60px to make the container go all the way to the bottom of the topbar */
 }
+.container{
+ width: 100%
+}
+.well {
+padding-top: 2px;
+padding-bottom: 2px;
+}
 
+#contact {
+padding-left: 35px;
+}
 .vertical-line {
     display: inline;
     background-color: #000000;
