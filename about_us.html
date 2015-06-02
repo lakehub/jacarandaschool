@@ -75,39 +75,29 @@
     <div class="container">
       <div class="row">
    
-  <div class="col-md-3">
-  
-      <ul class="nav nav-pills nav-stacked">
-      
-        <li class="active"><a href="#">Visit Us </a></li>
-       <li><a href="#"> Messages</a></li>
-         <li><a href="#">Events</a></li>
-        <li><a href="#">Invites</a></li>
-        <li><a href="#">Account Settings</a></li>  
-        <li><a href="#">Statistics</a></li> 
-        </ul>
-          
-          <hr class="featurette-divider">
-          
-          
-           <ul class="nav nav-pills nav-stacked">
-      
-        <li class="active"><a href="#">Be part of Us  </a></li>
-       <li><a href="#"> Volunteer</a></li>
-         <li><a href="#">Support a Student</a></li>
-        <li><a href="#">Partner with Us</a></li>
-        <li><a href="#">Job vacancies </a></li>  
-          </ul>
-<!-------------separating diffrent list group headings-->
-   
-       
-    </div>
-    
+  <div class="container">
+
+	<div class="row">
+		<div class="col-md-3" >
+			<div class="well">
+				<h2>Our Mission</h2>
+				<p>To inspire lifelong learning, advance knowledge and strengthen our communities.</p><br>
+			</div> <!--mission well-->
+			<div class="well">
+				<h2>Our Vision</h2>
+				<p>To be a center of excellence where every person has the opportunity to achieve his/her fullest potential and participate in and contribute to all aspects of life.</p><br>
+			</div><!--vision well-->
+			<div class="well">
+				<h2>Our Motto </h2>
+				<p>Perfect Practice Does it</p><br>
+			</div><!--vision well-->
+		</div> <!--column-->
+
     
 <div class="col-md-8">
 <p>
 
-<img class="img-rounded" data-src="holder.js/140x140" src="assets/img/IMG_5803.JPG" width="120%" height="400">
+<img class="img-rounded" data-src="holder.js/140x140" src="assets/img/IMG_5803.JPG" width="118%" height="400">
           <h4>Biography</h4>
           <p>Kisumu Jacaranda Academy is a mixed day primary school located in Milimani-Nyalenda area in Kisumu town, Kenya.
 The school has over 410 pupils.<br>
@@ -126,17 +116,6 @@ The main challenges the school is facing are in infrastructure and poor payment 
 
 
 </p>
-<h3>Vision</h3>
-
-<p>To be a center of excellence where every person has the opportunity to achieve his/her fullest potential and participate in and contribute to all aspects of life.<br>
-
-<h3>Mission</h3>
-<p>To inspire lifelong learning, advance knowledge and strengthen our communities.<br>
-
-
-<h3>Motto</h3>
-
-<p>Perfect practice does it.<br>
 
 
 
@@ -154,45 +133,27 @@ The main challenges the school is facing are in infrastructure and poor payment 
 <h3>Contact Us</h3>
 
 <form class="form-horizontal" role="form" method="post" action="email.php">
-    <div class="form-group">
-        <label for="name" class="col-sm-2 control-label">Name</label>
-        <div class="col-sm-10">
-            <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="<?php echo htmlspecialchars($_POST['name']); ?>">
-            <?php echo "<p class='text-danger'>$errName</p>";?>
-        </div>
-    </div>
-    <div class="form-group">
-        <label for="email" class="col-sm-2 control-label">Email</label>
-        <div class="col-sm-10">
-            <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="<?php echo htmlspecialchars($_POST['email']); ?>">
-            <?php echo "<p class='text-danger'>$errEmail</p>";?>
-        </div>
-    </div>
-    <div class="form-group">
-        <label for="message" class="col-sm-2 control-label">Message</label>
-        <div class="col-sm-10">
-   <textarea class="form-control" rows="4" name="message"><?php echo htmlspecialchars($_POST['message']);?></textarea>
-            <?php echo "<p class='text-danger'>$errMessage</p>";?>
-        </div>
-    </div>
-    <div class="form-group">
-        <label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
-        <div class="col-sm-10">
-            <input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
-            <?php echo "<p class='text-danger'>$errHuman</p>";?>
-        </div>
-    </div>
-    <div class="form-group">
-        <div class="col-sm-10 col-sm-offset-2">
-            <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
-        </div>
-    </div>
-    <div class="form-group">
-        <div class="col-sm-10 col-sm-offset-2">
-            <?php echo $result; ?>    
-        </div>
-    </div>
-</form> 
+				<div class="form-group col-sm-12">
+					<label for="name" class="control-label">Name</label>
+					<input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name">
+				</div><!--form-group-->
+				<div class="form-group col-sm-12">
+					<label for="email" class="control-label">Email</label>
+					<input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com">
+				</div><!--form-group-->
+				<div class="form-group col-sm-12">
+					<label for="message" class="control-label">Message</label>
+					<textarea class="form-control" rows="4" name="message" placeholder="Your message to Jacaranda School"></textarea>
+				</div><!--form-group-->
+				<div class="form-group col-sm-12">
+					<label for="human" class="control-label">2 + 3 = ?</label>
+					<input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
+				</div><!--form-group-->
+				<div class="form-group col-sm-12">
+					<input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+				</div>
+			</div>
+		</form>
 
   
   <!-----------------------------end of contact us------>
