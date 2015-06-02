@@ -1,25 +1,21 @@
-<?php phpinfo(); ?>
-// Please specify your Mail Server - Example: mail.example.com.
-ini_set("SMTP","mail.example.com");
 
-// Please specify an SMTP Number 25 and 8889 are valid SMTP Ports.
-ini_set("smtp_port","25");
-
-// Please specify the return address to use
-ini_set('sendmail_from', 'moiseke@yahoo.com');
 <?php
     if ($_POST["submit"]) {
         $name = $_POST['name'];
         $email = $_POST['email'];
         $message = $_POST['message'];
         $human = intval($_POST['human']);
-        $from = 'about_us.html'; 
+        $from = 'moiseke@yahoo.com'; 
 		//Demo Contact Form
         $to = 'kisumujacaranda@yahoo.com';
 		//$to = 'moiseke@yahoo.com'; 
         $subject = 'Message from Contact Demo ';
         
         $body = "From: $name\n E-Mail: $email\n Message:\n $message";
+        $errName ='';
+        $errEmail = '';
+        $errMessage = '';
+        $errHuman = '';
  
         // Check if name has been entered
         if (!$_POST['name']) {
@@ -48,6 +44,7 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
 	else {
         $result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later</div>';
     }
+    echo "You have sent mail successfully!<a href=index.php>Click Here to go to Home";
 }
     }
 ?>
