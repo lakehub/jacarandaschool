@@ -12,6 +12,8 @@
         $subject = 'Message from Contact Demo ';
         
         $body = "From: $name\n E-Mail: $email\n Message:\n $message";
+        
+
         $errName ='';
         $errEmail = '';
         $errMessage = '';
