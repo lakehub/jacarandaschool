@@ -5,9 +5,11 @@ body {
 .container{
  width: 100%
 }
-.well {
+.side-well {
 padding-top: 2px;
 padding-bottom: 2px;
+background-color: #F5D0A9;
+border: 1px solid #963;
 }
 
 #contact {
