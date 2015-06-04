@@ -96,7 +96,7 @@
 <div class="col-md-8">
 <p>
 <div class="thumbnail">
-<img class="img-rounded" data-src="holder.js/140x140" src="assets/img/IMG_5803.JPG" width="118%" height="400">
+<img class="img-rounded" data-src="holder.js/140x140" src="assets/img/IMG_5803.JPG">
 </div>
           <h4>Biography</h4>
           <p>Kisumu Jacaranda Academy is a mixed day primary school located in Milimani-Nyalenda area in Kisumu town, Kenya.
@@ -128,44 +128,47 @@ The main challenges the school is facing are in infrastructure and poor payment 
 <div class="row">
 <div class="col-md-3"> 
 </div>
-<div class="col-md-6">
 
-
-<h3>Contact Us</h3>
-
-<form class="form-horizontal" role="form" method="post" action="email.php">
-				<div class="form-group col-sm-12">
-					<label for="name" class="control-label">Name</label>
-					<input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name">
-				</div><!--form-group-->
-				<div class="form-group col-sm-12">
-					<label for="email" class="control-label">Email</label>
-					<input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com">
-				</div><!--form-group-->
-				<div class="form-group col-sm-12">
-					<label for="message" class="control-label">Message</label>
-					<textarea class="form-control" rows="4" name="message" placeholder="Your message to Jacaranda School"></textarea>
-				</div><!--form-group-->
-				<div class="form-group col-sm-12">
-					<label for="human" class="control-label">2 + 3 = ?</label>
-					<input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
-				</div><!--form-group-->
-				<div class="form-group col-sm-12">
-					<input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
-				</div>
-			</div>
-		</form>
-
-  
-  <!-----------------------------end of contact us------>
-   
-</div>  
 </div>
 
 </div>
 
 </div>
 </div>
+<!-- ================================================================================================ -->
+
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="moiseke@yahoo.com">Contact Us</button>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">New message</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="control-label">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="control-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ================================================================================================ -->
 <hr class="featurette-divider">
 <!--start of  the Page footer -->
 
@@ -221,7 +224,7 @@ The main challenges the school is facing are in infrastructure and poor payment 
   <script src="assets/js/jquery.js"></script>
   <script src="assets/js/bootstrap-transition.js"></script>
   <script src="assets/js/bootstrap-alert.js"></script>
-  <script src="assets/js/bootstrap-modal.js"></script>
+  
   <script src="assets/js/bootstrap-dropdown.js"></script>
   <script src="assets/js/bootstrap-scrollspy.js"></script>
   <script src="assets/js/bootstrap-tab.js"></script>
@@ -230,7 +233,7 @@ The main challenges the school is facing are in infrastructure and poor payment 
   <script src="assets/js/bootstrap-button.js"></script>
   <script src="assets/js/bootstrap-collapse.js"></script>
   <script src="assets/js/bootstrap-carousel.js"></script>
-
+<script src="assets/js/bootstrap-modal.js"></script>
   <script src="assets/js/bootstrap-typeahead.js"></script>
 
   </body>
