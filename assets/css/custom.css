@@ -15,6 +15,10 @@ border: 1px solid #963;
 #contact {
 padding-left: 35px;
 }
+#home-sidebar{
+
+	margin-left: 15px;
+}
 .vertical-line {
     display: inline;
     background-color: #000000;
